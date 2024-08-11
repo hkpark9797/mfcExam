@@ -7,8 +7,8 @@
 #include "prj.h"
 #include "prjDlg.h"
 #include "afxdialogex.h"
-#include <iostream>
 
+#include <iostream>
 using namespace std;
 
 #ifdef _DEBUG
@@ -71,6 +71,10 @@ BEGIN_MESSAGE_MAP(CprjDlg, CDialogEx)
 	ON_WM_QUERYDRAGICON()
 	ON_WM_DESTROY()
 	ON_BN_CLICKED(IDC_BTN_TEST, &CprjDlg::OnBnClickedBtnTest)
+	ON_BN_CLICKED(IDC_BTN_PROCESS, &CprjDlg::OnBnClickedBtnProcess)
+	ON_BN_CLICKED(IDC_BTN_MAKE_PATTERN, &CprjDlg::OnBnClickedBtnMakePattern)
+	ON_BN_CLICKED(IDC_BTN_GET_DATA, &CprjDlg::OnBnClickedBtnGetData)
+	ON_BN_CLICKED(IDC_BTN_THREAD, &CprjDlg::OnBnClickedBtnThread)
 END_MESSAGE_MAP()
 
 
@@ -216,4 +220,134 @@ void CprjDlg::OnBnClickedBtnTest()
 
 	m_pDlgImage->Invalidate();
 	m_pDlgImgResult->Invalidate();
+}
+
+#include "CProcess.h"
+#include <chrono>
+#include <thread>
+
+using namespace chrono;
+
+void CprjDlg::OnBnClickedBtnProcess()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	CProcess process;
+
+	auto start = std::chrono::system_clock::now();
+	int nRet = process.getStarInfo(&m_pDlgImage->m_image,100);
+	auto end = std::chrono::system_clock::now();
+	auto millisec = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+
+
+	cout << nRet << "\t" << millisec.count() << "ms" << endl;
+}
+
+void CprjDlg::OnBnClickedBtnMakePattern()
+{
+	unsigned char* fm = (unsigned char*)m_pDlgImage->m_image.GetBits();
+	int nWidth = m_pDlgImage->m_image.GetWidth();
+	int nHeight = m_pDlgImage->m_image.GetHeight();
+	int nPitch = m_pDlgImage->m_image.GetPitch();
+	memset(fm, 0, nWidth * nHeight);
+
+	CRect rect(100, 100, 200, 200);
+	for (int j = rect.top; j < rect.bottom; j++) {
+		for (int i = rect.left; i < rect.right; i++) {
+			fm[j * nPitch + i] = rand() % 0xff;
+		}
+	}
+	m_pDlgImage->Invalidate();
+
+
+}
+
+
+void CprjDlg::OnBnClickedBtnGetData()
+{
+	unsigned char* fm = (unsigned char*)m_pDlgImage->m_image.GetBits();
+	int nWidth = m_pDlgImage->m_image.GetWidth();
+	int nHeight = m_pDlgImage->m_image.GetHeight();
+	int nPitch = m_pDlgImage->m_image.GetPitch();
+
+	int nTh = 0x80;
+	CRect rect(0, 0, nWidth, nHeight);
+	int nSumX = 0;
+	int nSumY = 0;
+	int nCount = 0;
+
+	for (int j = rect.top; j < rect.bottom; j++) {
+		for (int i = rect.left; i < rect.right; i++) {
+			if (fm[j * nPitch + i] > nTh) {
+				nSumX += i;
+				nSumY += j;
+				nCount++;
+			}
+		}
+	}
+
+	double dCenterX = (double)nSumX / nCount;
+	double dCenterY = (double)nSumY / nCount;
+
+	cout << dCenterX << "\t" << dCenterY << endl;
+
+}
+
+void threadProcess(CWnd* pParent, CRect rect, int* nRet)
+{
+	CprjDlg* pWnd = (CprjDlg*)pParent;
+	*nRet = pWnd->processImg(rect);
+}
+
+void CprjDlg::OnBnClickedBtnThread()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	auto start = system_clock::now();
+
+	int nImgSize = 4096 * 4;
+	CRect rect(0, 0, nImgSize, nImgSize);
+	CRect rt[4];
+	int nRet[4] = { 0,0,0,0 };
+
+	for (int k = 0; k < 4; k++) {
+		rt[k] = rect;
+		rt[k].OffsetRect(nImgSize * (k % 2), nImgSize * int(k / 2));
+	}
+
+	thread _thread0(threadProcess, this, rt[0], &nRet[0]);
+	thread _thread1(threadProcess, this, rt[1], &nRet[1]);
+	thread _thread2(threadProcess, this, rt[2], &nRet[2]);
+	thread _thread3(threadProcess, this, rt[3], &nRet[3]);
+	
+	//_thread0.detach();
+	//_thread1.detach();
+	//_thread2.detach();
+	//_thread3.detach();
+
+	_thread0.join();
+	_thread1.join();
+	_thread2.join();
+	_thread3.join();
+
+	int nSum = 0;
+	for (int i = 0; i < 4; i++) {
+		nSum += nRet[i];
+	}
+	auto end = system_clock::now();
+	auto millisec = duration_cast<milliseconds>(end - start);
+
+	cout << "main:" << nSum << "\t" << millisec.count() * 0.001 << "sec" << endl;
+	//cout <<  millisec.count() << endl;
+}
+
+int CprjDlg::processImg(CRect rect)
+{
+	auto start = system_clock::now();
+	CProcess process;
+
+	int nRet = process.getStarInfo(&m_pDlgImage->m_image, 0, rect);
+
+	auto end = system_clock::now();
+	auto millisec = duration_cast<milliseconds>(end - start);
+	cout << "thread:" << nRet << "\t" << millisec.count() * 0.001 << "sec" << endl;
+	return nRet;
 }

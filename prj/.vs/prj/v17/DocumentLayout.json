@@ -7,28 +7,28 @@
       "RelativeMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|solutionrelative:prjDlg.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|C:\\project\\mfcExam\\prj\\CDlgImage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|solutionrelative:CDlgImage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|C:\\project\\mfcExam\\prj\\CProcess.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|solutionrelative:CProcess.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|C:\\project\\mfcExam\\prj\\CDlgImage.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|solutionrelative:CDlgImage.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|C:\\project\\mfcExam\\prj\\framework.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|solutionrelative:framework.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|C:\\project\\mfcExam\\prj\\CProcess.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|solutionrelative:CProcess.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|C:\\project\\mfcExam\\prj\\prjDlg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|solutionrelative:prjDlg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|C:\\project\\mfcExam\\prj\\prj.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u0087 2$  \u0022     ",
-      "RelativeMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|solutionrelative:prj.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u0087 2$  \u0022     "
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|C:\\project\\mfcExam\\prj\\prj.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u0086 2$  \u0022     ",
       "RelativeMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|solutionrelative:prj.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u0086 2$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|C:\\project\\mfcExam\\prj\\CDlgImage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F65E2F97-9C5E-457C-9E26-8361EFD35519}|prj.vcxproj|solutionrelative:CDlgImage.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,20 +38,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "framework.h",
-              "DocumentMoniker": "C:\\project\\mfcExam\\prj\\framework.h",
-              "RelativeDocumentMoniker": "framework.h",
-              "ToolTip": "C:\\project\\mfcExam\\prj\\framework.h",
-              "RelativeToolTip": "framework.h",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-10T09:39:11.886Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "prj.rc - IDD_PRJ_DIALOG - Dialog",
+              "DocumentMoniker": "C:\\project\\mfcExam\\prj\\prj.rc",
+              "RelativeDocumentMoniker": "prj.rc",
+              "ToolTip": "C:\\project\\mfcExam\\prj\\prj.rc - IDD_PRJ_DIALOG - Dialog",
+              "RelativeToolTip": "prj.rc - IDD_PRJ_DIALOG - Dialog",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-08-10T10:20:40.261Z",
+              "EditorCaption": " - IDD_PRJ_DIALOG - Dialog"
             },
             {
               "$type": "Document",
@@ -61,7 +60,7 @@
               "RelativeDocumentMoniker": "CDlgImage.cpp",
               "ToolTip": "C:\\project\\mfcExam\\prj\\CDlgImage.cpp",
               "RelativeToolTip": "CDlgImage.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAATAAAA",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAswFQAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-09T14:27:19.851Z",
               "EditorCaption": ""
@@ -74,31 +73,20 @@
               "RelativeDocumentMoniker": "prjDlg.h",
               "ToolTip": "C:\\project\\mfcExam\\prj\\prjDlg.h",
               "RelativeToolTip": "prjDlg.h",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAhwA8AAAAcAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAADwvysAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-08-09T14:07:11.69Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "prj.rc - IDD_CDlgImage - Dialog",
-              "DocumentMoniker": "C:\\project\\mfcExam\\prj\\prj.rc",
-              "RelativeDocumentMoniker": "prj.rc",
-              "ToolTip": "C:\\project\\mfcExam\\prj\\prj.rc - IDD_CDlgImage - Dialog",
-              "RelativeToolTip": "prj.rc - IDD_CDlgImage - Dialog",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-08-09T13:57:05.451Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "CDlgImage.h",
               "DocumentMoniker": "C:\\project\\mfcExam\\prj\\CDlgImage.h",
               "RelativeDocumentMoniker": "CDlgImage.h",
               "ToolTip": "C:\\project\\mfcExam\\prj\\CDlgImage.h",
               "RelativeToolTip": "CDlgImage.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxQAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-08-09T13:56:10.004Z",
               "EditorCaption": ""
@@ -109,23 +97,38 @@
               "Title": "prjDlg.cpp",
               "DocumentMoniker": "C:\\project\\mfcExam\\prj\\prjDlg.cpp",
               "RelativeDocumentMoniker": "prjDlg.cpp",
-              "ToolTip": "C:\\project\\mfcExam\\prj\\prjDlg.cpp*",
-              "RelativeToolTip": "prjDlg.cpp*",
-              "ViewState": "AQIAAMIAAAAAAAAAAAAQwM0AAAAiAAAA",
+              "ToolTip": "C:\\project\\mfcExam\\prj\\prjDlg.cpp",
+              "RelativeToolTip": "prjDlg.cpp",
+              "ViewState": "AQIAADEBAAAAAAAAAAAjwD8BAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-09T12:17:24.054Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "prj.rc - IDD_PRJ_DIALOG - Dialog",
-              "DocumentMoniker": "C:\\project\\mfcExam\\prj\\prj.rc",
-              "RelativeDocumentMoniker": "prj.rc",
-              "ToolTip": "C:\\project\\mfcExam\\prj\\prj.rc - IDD_PRJ_DIALOG - Dialog",
-              "RelativeToolTip": "prj.rc - IDD_PRJ_DIALOG - Dialog",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-08-09T11:02:20.34Z"
+              "DocumentIndex": 1,
+              "Title": "CProcess.cpp",
+              "DocumentMoniker": "C:\\project\\mfcExam\\prj\\CProcess.cpp",
+              "RelativeDocumentMoniker": "CProcess.cpp",
+              "ToolTip": "C:\\project\\mfcExam\\prj\\CProcess.cpp",
+              "RelativeToolTip": "CProcess.cpp",
+              "ViewState": "AQIAABwAAAAAAAAAAAApwCIAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-10T10:28:06.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CProcess.h",
+              "DocumentMoniker": "C:\\project\\mfcExam\\prj\\CProcess.h",
+              "RelativeDocumentMoniker": "CProcess.h",
+              "ToolTip": "C:\\project\\mfcExam\\prj\\CProcess.h",
+              "RelativeToolTip": "CProcess.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwsAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-10T10:26:29.726Z",
+              "EditorCaption": ""
             }
           ]
         }
